@@ -1,0 +1,150 @@
+/*
+Styles for jQuery browserSizr plugin
+URL: http://www.csslab.cl/2009/07/22/jquery-browsersizr/
+
+WARNING: Watch out the specificity for IE6! Extra efforts needed!
+You'll have to be smarter than this browser...
+*/
+
+* {margin: 0; padding: 0;}
+
+body {
+	font-family: Georgia, Times, serif;
+	background: #333;
+	font-size: 14px;
+}
+
+	#container {
+		width: 950px;
+		padding: 5px;
+		margin: 10px auto;
+		text-shadow: #000 0 0 5px;
+	}
+	
+		#menu {
+			width: 200px;
+			float: left;
+			background: #444;
+			list-style: none;
+			min-height: 500px;
+			-moz-box-shadow: #222 0 0 5px;
+			-webkit-box-shadow: #222 0 0 5px;
+			display: inline; /* damn IE6 */
+		}
+			#menu a {
+				display: block;
+				text-decoration: none;
+				border-bottom: 0.1em solid #83B232;
+				font-size: 1.7em;
+				color: #83B232;
+				font-weight: bold;
+				padding: 0.2em 0.4em;
+			}
+				#menu a:hover {
+					background: #83B232;
+					color: #333;
+				}
+	
+		#content {
+			width: 730px;
+			float: left;
+			margin-left: 20px;
+			background: #444;
+			min-height: 500px;
+			color: #ccc;
+			-moz-box-shadow: #222 0 0 5px;
+			-webkit-box-shadow: #222 0 0 5px;
+			display: inline; /* damn IE6 */
+		}
+			#content h1 {
+				padding: 0.5em;
+				font-size: 2.5em;
+			}
+			#content h2 {
+				padding: 0.5em;
+				font-size: 1.5em;
+			}
+			#content h3 {
+				padding: 0.5em;
+				font-size: 1.2em;
+			}
+			#content p {
+				padding: 0.5em;
+				font-size: 1em;
+			}
+			#content a {
+				color: #83B232;
+			}
+				#content a:hover {
+					text-decoration: none;
+					background: #83B232;
+					color: #333;
+				}
+			#content strong {
+				text-shadow: #83B232 0 0 1px;
+			}
+
+
+/* smartphones */
+	#container.smartphones {
+		width: 280px;
+		margin: 10px auto;
+	}
+		.smartphones #menu {
+			width: 100px;
+		}
+			.smartphones #menu a {
+				font-size: 0.9em;
+			}
+		.smartphones #content {
+			width: 160px;
+			margin-left: 10px;
+		}
+			.smartphones #content h1 {
+				font-size: 1.5em;
+			}
+			.smartphones #content h2 {
+				font-size: 0.8em;
+			}
+			.smartphones #content p {
+				font-size: 0.5em;
+			}
+
+/* lower1024 */
+	#container.lower1024 {
+		width: 660px;
+	}
+		.lower1024 #menu {
+			width: 150px;
+		}
+			.lower1024 #menu a {
+				font-size: 1.3em;
+			}
+		.lower1024 #content {
+			width: 490px;
+		}
+			.lower1024 #content h1 {
+				font-size: 2em;
+			}
+			.lower1024 #content p {
+				font-size: 0.9em;
+			}
+
+
+/* over1280 */
+	#container.over1280 {
+		width: 1200px;
+	}
+		.over1280 #menu {
+			width: 250px;
+		}
+			.over1280 #menu a {
+				font-size: 2.2em;
+			}
+		.over1280 #content {
+			width: 930px;
+		}
+			.over1280 #content p {
+				font-size: 1.2em;
+			}
+			
