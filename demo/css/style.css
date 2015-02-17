@@ -27,8 +27,7 @@ body {
 			background: #444;
 			list-style: none;
 			min-height: 500px;
-			-moz-box-shadow: #222 0 0 5px;
-			-webkit-box-shadow: #222 0 0 5px;
+			box-shadow: #222 0 0 5px;
 			display: inline; /* damn IE6 */
 		}
 			#menu a {
@@ -52,8 +51,7 @@ body {
 			background: #444;
 			min-height: 500px;
 			color: #ccc;
-			-moz-box-shadow: #222 0 0 5px;
-			-webkit-box-shadow: #222 0 0 5px;
+			box-shadow: #222 0 0 5px;
 			display: inline; /* damn IE6 */
 		}
 			#content h1 {

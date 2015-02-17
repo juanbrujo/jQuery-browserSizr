@@ -1,0 +1,32 @@
+{
+	"name": "browserSizr",
+	"title": "jQuery browserSizr",
+	"homepage": "https://github.com/juanbrujo/jQuery-browserSizr",
+	"description": "Your flexible fixed layout.",
+	"demo": "http://www.csslab.cl/2009/07/22/jquery-browsersizr/",
+	"keywords": [
+		"jQuery",
+		"responsive",
+		"plugin",
+		"browser"
+	],
+	"version": "0.9",
+	"author": {
+		"name": "Jorge Epuñan",
+		"url": "https://github.com/juanbrujo",
+		"twitter": "@csslab"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/",
+			"copyright": "©2009 CSSLab.cl"
+		}
+	],
+	"bugs": "https://github.com/juanbrujo/jQuery-browserSizr/issues",
+	"docs": "https://github.com/juanbrujos/jQuery-browserSizr#readme",
+	"download": "https://github.com/juanbrujo/jQuery-browserSizr/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.3.1"
+	}
+}
