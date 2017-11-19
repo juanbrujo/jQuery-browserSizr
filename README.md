@@ -16,49 +16,50 @@ With **jQuery browserSizr** you’ll have more control over CSS styles when ther
  
 Specifically, **browserSizr** detects the current width of your browser or it’s resize and injects a specific class when it is in the range you’ve activated. Through CSS and a bit of specificity, you can define what happens when the browser is in each resolution:
 
-	#container {
-   		width: 960px; /* normal width */
-   		font-size: 14px;
+```html
+#container {
+	width: 960px; /* normal width */
+	font-size: 14px;
+}
+	#container.lower1024 {
+		width: 740px; /* width for less than 1024px */
+		font-size: 12px; /* smaller font-size */
 	}
-   		#container.lower1024 {
-      		width: 740px; /* width for less than 1024px */
-      		font-size: 12px; /* smaller font-size */
-   		}
-   		#container.over1280 {
-      		width: 1200px; /* width for over 1280px */
-      		font-size: 16px; /* bigger font-size */
-   		}
- 
+	#container.over1280 {
+		width: 1200px; /* width for over 1280px */
+		font-size: 16px; /* bigger font-size */
+	}
+``` 
 
 Configuration:
 -------
 
 Include the jQuery library and this plugin:
 
-	<script src="js/jquery-1.6.1.min.js"></script>
-	<script src="js/jquery.browserSizr.js"></script>
+```html
+<script src="js/jquery-1.6.1.min.js"></script>
+<script src="js/jquery.browserSizr.js"></script>
+```
 
 Inicialize-it with the default parameters:
 
-	$(function(){
-   		$().browserSizr();
-	});
+```javascript
+$(function(){
+	$().browserSizr();
+});
+```
 
 Or configure it as preferred:
 
-	$().browserSizr({
-	   containerDiv: '#container',
-	   //containerDiv - value: any HTML tag or #id, default to #container
-	   debug: 'off',
-	   //debug-  value: on | off, default to 'off'
-	   smartphones: 'off',
-	   //smartphones - value: on | off, default to 'off'
-	   lower1024: 'on',
-	   //lower1024 - value: on | off, default to 'on'
-	   over1024: 'on',
-	   //over1024 - value: on | off, default to 'on'
-	   over1280: 'off'
-	   //over1280 - value: on | off, default to 'off'
-	});
+```javascript
+$().browserSizr({
+   containerDiv: '#container', //containerDiv - value: any HTML tag or #id, default to #container
+   debug: 'off', //debug-  value: on | off, default to 'off'
+   smartphones: 'off', //smartphones - value: on | off, default to 'off'
+   lower1024: 'on', //lower1024 - value: on | off, default to 'on'
+   over1024: 'on', //over1024 - value: on | off, default to 'on'
+   over1280: 'off' //over1280 - value: on | off, default to 'off'
+});
+```
 
 [Example](http://www.csslab.cl/ejemplos/browserSizr/)
