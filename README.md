@@ -16,7 +16,7 @@ With **jQuery browserSizr** you’ll have more control over CSS styles when ther
  
 Specifically, **browserSizr** detects the current width of your browser or it’s resize and injects a specific class when it is in the range you’ve activated. Through CSS and a bit of specificity, you can define what happens when the browser is in each resolution:
 
-```html
+```css
 #container {
 	width: 960px; /* normal width */
 	font-size: 14px;
